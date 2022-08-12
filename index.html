@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div id="page-mask"></div>
+        <div class="header">
+            <div id="headertext">Library.</div>
+            <button id="addBtn">Add</button>
+        </div>
+        <div id="main" class="main">
+            <div class="newBookPopup" id="newBookPop">
+                <div class = 'formPopup' id="popupForm">
+                    <form id="form" class="formContainer" onsubmit="return addBookToLibrary()">
+                    <h2 id="formHeader">Add a new book</h2>
+                    <label for="title">
+                        <strong>Title</strong>
+                    </label>
+                    <input type="text" id="titleForm" name = 'title' required = 'yes'>
+                    <label for="author">
+                        <strong>Author</strong>
+                    </label>
+                    <input type="text" id="authorForm" name = 'author' required = 'yes'>
+                    <label for="pages">
+                        <strong>No. of pages</strong>
+                    </label>
+                    <input type="number" id="pagesForm" name = 'pages' required = 'yes'>
+                    <label for="readstatus">
+                        <strong>Have you read it?</strong>
+                    </label>
+                        <select name="readstatus" required="yes">
+                            <option value= 'yes' >Yes</option>
+                            <option value= 'no' >No</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
 
    <script src="script.js"></script>   

@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 8vh;
+    width: 100vw;
+    background-color: #F6BD60;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+#headertext {
+    margin-left: 6rem;
+    color: #e67977d3;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#addBtn {
+    margin-left: auto;
+    margin-right: 60px;
+    border: none;
+    
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e67977d3;
+    color: #F7EDE2;
+    font-size: 18px;
+    transition: transform .2s;
+}
+
+#addBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main {
+    height: 92vh;
+    background-color: #F7EDE2;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+
+}
+
+.book {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 130px;
+    background-color: whitesmoke;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 10%;
+}
+
+.author {
+  margin-top: auto;
+}
+#readBtn, #removeBtn {
+    width: 100%
+}
+
+#readBtn {
+  margin-top: auto;
+}
+
+#readBtn:hover, #removeBtn:hover {
+  cursor: pointer;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+#formHeader,
+strong {
+    color: #e67977d3;
+
+} 
+
+#formHeader {
+    font-size: 30px;
+}
+
+  .newBookPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    display: none;
+    z-index: 9;
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #F6BD60;;
+  }
+  .formContainer input[type=text],
+   .formContainer input[type=number],
+   .formContainer > select{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+
+  .formContainer input[type=submit]{
+    width: 40%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+    border-radius: 10px;
+    color: #e67977d3;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+  .formContainer input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover{
+    opacity: 1;
+  }
+
+#page-mask {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 8;
+  }
