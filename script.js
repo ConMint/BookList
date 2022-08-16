@@ -14,18 +14,12 @@ let myLibrary = [
     }
 ];
 
-
-function Book(title, author, pages, readstatus) {
-     this.title = title
-     this.author = author
-     this.pages = pages
-     this.readstatus = readstatus
-}
-// function Book(form) {
-//     this.title = form.title.value;
-//     this.author = form.author.value;
-//     this.pages = form.pages.value;
-//     this.readstatus = form.readstatus.value;
+// Original constructor version 
+// function Book(title, author, pages, readstatus) {
+//      this.title = title
+//      this.author = author
+//      this.pages = pages
+//      this.readstatus = readstatus
 // }
 
 const addBtn = document.getElementById('addBtn');
@@ -166,5 +160,13 @@ function openTheForm() {
     document.getElementById("newBookPop").style.display = "none";
   }
 
- 
-  
+ // CLASS VERSION //
+  class Book {
+    
+    constructor(title, author, pages, readstatus) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.readstatus = readstatus
+    }
+  }
