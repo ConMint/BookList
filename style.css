@@ -60,7 +60,7 @@ html, body {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 90px;
+    gap: 50px;
 
 }
 
@@ -184,4 +184,10 @@ strong {
     bottom: 0;
     left: 0;
     z-index: 8;
+  }
+
+
+  #submitBtn {
+    width: 100px;
+    text-align: center;
   }
