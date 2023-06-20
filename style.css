@@ -5,7 +5,7 @@ body {
 }
 
 html, body {
-  overflow: auto;
+  overflow:scroll;
 }
 
 .container {
@@ -191,3 +191,8 @@ strong {
     width: 100px;
     text-align: center;
   }
+
+
+  body.keyboard {
+    height: calc(100% + 500px); /* add padding for keyboard */
+}
