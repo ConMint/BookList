@@ -125,15 +125,16 @@ render();
 function openTheForm() {
   document.getElementById('popupForm').style.display = 'block';
   document.getElementById('page-mask').style.display = 'block';
+  document.getElementById('page-mask').classList.add("keyboard");
   document.getElementById('newBookPop').style.display = 'block';
-  document.body.classList.add("keyboard");
+
 }
 
 function closeTheForm() {
   document.getElementById('popupForm').style.display = 'none';
   document.getElementById('page-mask').style.display = 'none';
   document.getElementById('newBookPop').style.display = 'none';
-  document.body.classList.remove("keyboard");
+  document.getElementById('page-mask').classList.remove("keyboard");
 }
 
 const titleForm = document.getElementById('titleForm');
